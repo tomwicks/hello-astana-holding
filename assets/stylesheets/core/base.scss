@@ -1,0 +1,17 @@
+// =================================================================
+// 	Mediapreview
+// 	Base
+// =================================================================
+
+html {
+	font-size: 1.1em;
+}
+
+body {
+	position: relative;
+	background: $colorOne;
+
+	&.is-exiting {
+		background: #fff;
+	}
+}

@@ -1,0 +1,56 @@
+// =================================================================
+// 	Hello Lampost
+// 	Footer
+// =================================================================
+
+footer {
+	padding: 20px 0 18px 0;
+	background: darken($colorTwo, 5%);
+	font-size: 16px;
+	height: auto;
+	overflow: auto;
+	clear: both;
+	display: block;
+
+	p {
+		padding: 0;
+		margin: 0;
+		color: #fff;
+		opacity: 0.8;
+	}
+
+	a {
+		padding: 0;
+		opacity: 0.8;
+		margin: 0;
+		color: #fff;
+		border-bottom: 2px solid $colorOne;
+		padding-bottom: 2px;
+	}
+
+	.right {
+		float: right;
+
+		.js-to-top {
+			text-align: right;
+			float: right;
+		}
+	}
+
+	@include mq("small", "max-width") {
+		p, a {
+			margin: 10px 0;
+			display: block;
+			width: intrinsic;
+		}
+
+		.right {
+			float: left;
+
+		.js-to-top {
+			text-align: left;
+			float: left;
+		}
+	}
+	}
+}
