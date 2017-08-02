@@ -798,6 +798,16 @@ a {
   margin-top: 100px;
   z-index: 100; }
 
+.holding .col-4 {
+  float: none;
+  display: block;
+  margin: 30vh auto; }
+  .holding .col-4 img {
+    width: 100%; }
+
+.holding img {
+  width: 100%; }
+
 .pop-up {
   display: block;
   width: 320px;
