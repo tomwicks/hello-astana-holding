@@ -6,10 +6,157 @@
   })
 </script>
 <article class="homepage">
-    <section class="holding">
+    <section class="hero">
+      <div class="grid-container">
+          <div class="row text-row">
+            <div class="col-6">
+              <h1><%= I18n.t(:description) %></h1>
+            </div>
+          </div>
+          <div class="row">
+            <div class="shift-2 col-8">
+              <div class="image">
+                <iframe src="https://player.vimeo.com/video/228964697" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="js-scroll-down-button scroll-down-button"><%= I18n.t(:how_it_works) %></a>
+    </section>
+    <section id="how-it-works" class="process">
       <div class="grid-container">
         <div class="col-4">
-          <%= I18n.t(:logo) %>
+          <div class="process-item">
+            <img class="top-img" src="/images/htp-1-ru.svg">
+            <img class="right-img" src="/images/htp-1-ru-2.svg">
+            <div class="image-circle">
+              <img src="/images/process-1.svg">
+            </div>
+            <h4><%= I18n.t(:pick_an_object) %></h4>
+            <p><%= I18n.t(:pick_an_object_text) %></p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="process-item">
+            <img class="top-img" src="/images/htp-2-ru.svg">
+            <div class="image-circle">
+              <img src="/images/process-2.svg">
+            </div>
+            <h4><%= I18n.t(:say_hello) %></h4>
+            <p><%= I18n.t(:say_hello_text) %></p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="process-item">
+            <img class="top-img" src="/images/htp-3-ru.svg">
+            <img class="right-img right-img-large" src="/images/htp-3-ru-2.svg">
+            <div class="image-circle">
+              <img src="/images/process-3.svg">
+            </div>
+            <h4><%= I18n.t(:keep_talking) %></h4>
+            <p><%= I18n.t(:keep_talking_text) %></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="information" class="information">
+      <img src="/images/bg-how-it-works.jpg">
+      <div class="right-block"></div>
+      <div class="grid-container">
+        <div class="col-6 right">
+          <h5><%= I18n.t(:information) %></h5>
+          <h1><%= I18n.t(:information_title) %></h1>
+          <p><%= I18n.t(:information_text) %></p>
+          <a class="link-btn-one js-learn-more">Show More</a>
+        </div>
+      </div>
+    </section>
+    <section class="how-to-play">
+      <div class="grid-container">
+        <div class="col-6">
+          <h1><%= I18n.t(:more_information) %></h1>
+          <p><%= I18n.t(:more_information_text_1) %></p>
+          <p><%= I18n.t(:more_information_text_2) %></p>
+          <p><%= I18n.t(:more_information_text_3) %></p>
+        </div>
+        <div class="col-6 pushed-column">
+          <p><%= I18n.t(:more_information_text_4) %></p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <div class="grid-container">
+        <div class="col-6">
+          <h5><%= I18n.t(:contact_us) %></h5>
+          <h1><%= I18n.t(:contact_us_title) %></h1>
+          <p><%= I18n.t(:contact_us_text_1) %></p>
+          <p><%= I18n.t(:contact_us_text_2) %></p>
+          <p><%= I18n.t(:contact_us_text_3) %></p>
+          <p><%= I18n.t(:contact_us_text_4) %></p>
+          <a class="link-btn-one" href="mailto:contact@panstudio.co.uk?Subject=Hello%20Astana%20Enquiry"><%= I18n.t(:contact_us_cta) %></a>
+        </div>
+        <div class="col-4">
+          <div class="swiper-controls">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
+            <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                     <div class="swiper-slide">
+                        <h3>Hello Lamp Post Brighton, <span>2016</span></h3>
+                        <div class="image-circle"><img src="/images/hlp-brighton.jpg"></div>
+                        <p><%= I18n.t(:hello_lampost_brighton) %></p>
+                      </div>
+                      <div class="swiper-slide">
+                        <h3>Hello Lamp Post Austin, <span>2015</span></h3>
+                        <div class="image-circle"><img src="/images/hlp-austin.jpg"></div>
+                        <p><%= I18n.t(:hello_lampost_austin) %></p>
+                      </div>
+                      <div class="swiper-slide">
+                        <h3>Hello Lamp Post Singapore, <span>2015</span></h3>
+                        <div class="image-circle"><img src="/images/hlp-singapore.jpg"></div>
+                        <p><%= I18n.t(:hello_lampost_singapore) %></p>
+                      </div>
+                      <div class="swiper-slide">
+                        <h3>Hello Lamp Post Bristol, <span>2013</span></h3>
+                        <div class="image-circle"><img src="/images/hlp-bristol.jpg"></div>
+                        <p><%= I18n.t(:hello_lampost_bristol) %></p>
+                      </div>
+                  </div>
+              </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <section class="supporters">
+      <div class="grid-container">
+        <div class="row">
+          <div class="col-3">
+            <img src="/images/bc-logo.png">
+          </div>
+          <div class="col-3">
+            <img src="/images/akimat-logo.png">
+          </div>
+          <div class="col-3">
+            <img src="/images/pan-logo.png">
+          </div>
+          <div class="col-3">
+            <img src="/images/pc-logo.png">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3">
+            <img src="/images/watershed-logo.png">
+          </div>
+          <div class="col-3">
+            <img src="/images/fc-logo.png">
+          </div>
+          <div class="col-3">
+            <img src="/images/kazpost-logo.png">
+          </div>
+          <div class="col-3">
+            <img src="/images/sup-logo.png">
+          </div>
         </div>
       </div>
     </section>
