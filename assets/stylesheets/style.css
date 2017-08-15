@@ -763,6 +763,9 @@ header {
     header .logo img {
       width: 100px; } }
 
+.en header .menu a {
+  letter-spacing: -1px; }
+
 a {
   cursor: pointer;
   text-decoration: none; }
