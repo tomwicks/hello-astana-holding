@@ -778,11 +778,12 @@ a {
   color: #3B3B3B;
   display: block;
   width: intrinsic;
-  max-width: 180px;
+  max-width: 200px;
   color: #3B3B3B;
   font-family: "Gotham-Bold", sans-serif;
   font-size: 1em;
-  border: 0; }
+  border: 0;
+  font-weight: 600; }
   .link-btn-one:after {
     content: "";
     display: block;
@@ -794,6 +795,29 @@ a {
     background-position: 0 0;
     float: right;
     margin-left: 10px; }
+
+.link-messenger {
+  background: #448AFF;
+  color: #fff;
+  max-width: 300px;
+  padding: 22px 45px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.4em;
+  box-shadow: 0px 0px 10px #111111; }
+  .link-messenger:after {
+    margin-top: -3px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/messenger_icon.svg"); }
+  .link-messenger:hover {
+    background: #2b7aff; }
+  .link-messenger:active {
+    background: #448AFF;
+    box-shadow: none; }
+
+.en .link-btn-one {
+  font-weight: normal; }
 
 .link-exit {
   width: 25px;
@@ -1326,6 +1350,29 @@ a {
         margin-right: 15px;
         top: -22px;
         right: -1px; } }
+
+.call-to-action {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background: #1d1d1d;
+  height: auto;
+  overflow: visible; }
+  .call-to-action a {
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 960px) {
+    .call-to-action {
+      padding: 50px 0; }
+      .call-to-action .link-messenger {
+        font-size: 1.3em; } }
+  @media (max-width: 350px) {
+    .call-to-action .link-messenger {
+      font-size: 1.2em;
+      padding: 22px 35px; }
+    .call-to-action .link-messenger:after {
+      width: 25px;
+      height: 25px; } }
 
 .information {
   width: 100%;

@@ -15,16 +15,17 @@ a {
 	color: $colorType;
 	display: block;
 	width: intrinsic;
-	max-width: 180px;
+	max-width: 200px;
 	color: $colorType;
 	font-family: "Gotham-Bold", sans-serif;
 	font-size: 1em;
 	border: 0;
+  font-weight: 600;
 
 	&:after {
 		content: "";
 		display: block;
-		width: 17px; 
+		width: 17px;
 		height: 17px;
 		background-image: url('/images/arrow-black.svg');
 		margin-top: 2px;
@@ -35,8 +36,41 @@ a {
 	}
 }
 
+.link-messenger {
+  background: #448AFF;
+  color: #fff;
+  max-width: 300px;
+  padding: 22px 45px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.4em;
+  box-shadow: 0px 0px 10px darken($colorTwo, 10%);
+
+  &:after {
+    margin-top: -3px;
+    margin-left: 20px;
+    width: 30px;
+		height: 30px;
+    background-image: url('/images/messenger_icon.svg');
+  }
+
+  &:hover {
+    background: darken(#448AFF, 5%);
+  }
+
+  &:active {
+    background: #448AFF;
+    box-shadow: none;
+  }
+}
+
+.en {
+  .link-btn-one {
+    font-weight: normal;
+  }
+}
+
 .link-exit {
-	width: 25px; 
+	width: 25px;
 	height: 25px;
 	background-image: url('/images/exit.svg');
 	margin-top: 2px;

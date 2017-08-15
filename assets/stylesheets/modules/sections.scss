@@ -665,10 +665,44 @@
 			top: 55px;
 		}
 
-		.top-img{
+		.top-img {
 			margin-right: 15px;
 			top: -22px;
 			right: -1px;
+		}
+	}
+}
+
+.call-to-action {
+	width: 100%;
+	height: auto;
+	padding: 100px 0;
+	background: darken($colorTwo, 5%);
+	height: auto;
+	overflow: visible;
+
+	a {
+		margin: 0 auto;
+		display: block;
+	}
+
+	@include mq("small", "max-width") {
+		padding: 50px 0;
+
+		.link-messenger {
+			font-size: 1.3em;
+		}
+	}
+
+	@include mq("nano", "max-width") {
+		.link-messenger {
+			font-size: 1.2em;
+			padding: 22px 35px;
+		}
+
+		.link-messenger:after {
+			width: 25px;
+			height: 25px;
 		}
 	}
 }
