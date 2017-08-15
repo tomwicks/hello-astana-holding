@@ -14,7 +14,7 @@ GEM
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
-    sass (3.2.19)
+    sass (4.0.0.alpha.1)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -40,7 +40,7 @@ DEPENDENCIES
   rack
   rack-test
   rake
-  sass
+  sass (~> 4.0.0.alpha.1)
   sinatra
   sprockets
   test-unit
