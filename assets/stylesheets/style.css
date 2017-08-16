@@ -261,7 +261,11 @@ body {
 h1, h2, h3, h4 {
   font-weight: inherit;
   line-height: 1.4;
+  font-weight: 600;
   font-family: "Gotham-bold", sans-serif; }
+
+.en h1, .en h2, .en h3, .en h4 {
+  font-weight: normal; }
 
 h1 {
   font-size: 1.9em; }
@@ -713,12 +717,12 @@ header {
       color: #2A2A2A;
       font-size: 1.1em;
       font-family: gotham-bold, sans-serif;
+      transition: all 0.2s ease-in-out;
       font-weight: 600;
       cursor: pointer;
       border-bottom: 2px solid #EDBF00; }
     header .menu a:hover {
-      border-bottom: 2px solid #2A2A2A;
-      transition: all 0.2s ease-in-out;}
+      border-bottom: 2px solid #2A2A2A; }
   header .country-picker ul li a {
     cursor: pointer;
     width: 38px;
@@ -731,7 +735,7 @@ header {
     border-radius: 100%;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 60px 50px; /* background-size: 80px 80px; */
+    background-size: 60px 50px;
     border: 2px solid #2A2A2A; }
   header .country-picker ul li a.en {
     background-image: url("/images/flag-en.svg"); }
@@ -755,9 +759,13 @@ header {
         display: block;
         margin: 25px auto;
         float: none; } }
-  @media (max-width: 330px) {
-      header .logo img {
-        width: 100px; }}
+  @media (max-width: 350px) {
+    header .logo img {
+      width: 100px; } }
+
+.en header .menu a {
+  letter-spacing: -1px; }
+
 a {
   cursor: pointer;
   text-decoration: none; }
@@ -773,11 +781,12 @@ a {
   color: #3B3B3B;
   display: block;
   width: intrinsic;
-  max-width: 180px;
+  max-width: 200px;
   color: #3B3B3B;
   font-family: "Gotham-Bold", sans-serif;
   font-size: 1em;
-  border: 0; }
+  border: 0;
+  font-weight: 600; }
   .link-btn-one:after {
     content: "";
     display: block;
@@ -789,6 +798,29 @@ a {
     background-position: 0 0;
     float: right;
     margin-left: 10px; }
+
+.link-messenger {
+  background: #448AFF;
+  color: #fff;
+  max-width: 300px;
+  padding: 22px 45px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.4em;
+  box-shadow: 0px 0px 10px #111111; }
+  .link-messenger:after {
+    margin-top: -3px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background-image: url("/images/messenger_icon.svg"); }
+  .link-messenger:hover {
+    background: #2b7aff; }
+  .link-messenger:active {
+    background: #448AFF;
+    box-shadow: none; }
+
+.en .link-btn-one {
+  font-weight: normal; }
 
 .link-exit {
   width: 25px;
@@ -862,8 +894,8 @@ a {
     margin: auto; }
   .hero h1 {
     font-size: 1.5em;
-    font-weight: 600;
     text-align: center;
+    font-weight: 600;
     line-height: 1.25;
     margin-bottom: 50px;
     color: #2A2A2A; }
@@ -973,7 +1005,7 @@ a {
       margin: 0 auto;
       color: #fff; }
     .hero.message .text-row .col-6 h1 {
-      font-size: 1.45em;}
+      font-size: 1.45em; }
   .hero.message .bubble {
     margin-top: 100px;
     width: -moz-calc(50% - 15px);
@@ -1235,6 +1267,12 @@ a {
   padding: 100px 0; }
   .process .col-4:last-child .process-item:last-child:after {
     display: none; }
+  .process .right-img {
+    top: 55px; }
+  .process .top-img {
+    margin-right: 15px;
+    top: -22px;
+    right: -1px; }
   .process .process-item {
     width: 270px;
     display: block;
@@ -1243,17 +1281,16 @@ a {
     position: relative; }
     .process .process-item h4 {
       font-family: "Gotham-Bold", sans-serif;
-      font-weight: 600;
       color: #fff;
       margin-bottom: 10px; }
     .process .process-item p, .process .process-item span {
       color: #fff; }
     .process .process-item:after {
       content: "";
-      display: none; /* block */
+      display: block;
       width: 100px;
       top: 80px;
-      right: -160px; /* -115 */
+      right: -115px;
       position: absolute;
       height: 15px;
       background-image: url("/images/large-arrow.svg");
@@ -1268,7 +1305,8 @@ a {
     z-index: 10;
     width: 210px;
     margin-left: auto;
-    margin-right: 25px; /* auto */
+    margin-right: 25px;
+    /* auto */
     left: 0;
     right: 0; }
   .process .right-img {
@@ -1276,12 +1314,10 @@ a {
     top: 40px;
     z-index: 20;
     width: 100px;
-    right: -10px;
-  }
-  .process .right-img-large{
+    right: -10px; }
+  .process .right-img-large {
     width: 125px;
-    right: -20px;
-  }
+    right: -20px; }
   .process .image-circle {
     width: 170px;
     display: block;
@@ -1290,7 +1326,6 @@ a {
     border: 3px solid #fff;
     margin-bottom: 30px; }
     .process .image-circle img {
-      transform: scaleX(-1);
       width: 100%; }
   @media (max-width: 1130px) {
     .process .process-item:after {
@@ -1311,13 +1346,36 @@ a {
       .process .image-circle {
         width: 180px; }
       .process .process-item:after {
-        display: none; } 
-      .process .right-img{
+        display: none; }
+      .process .right-img {
         top: 55px; }
-      .process .top-img{
-        margin-right: 15px; 
+      .process .top-img {
+        margin-right: 15px;
         top: -22px;
-        right: -1px;}}
+        right: -1px; } }
+
+.call-to-action {
+  width: 100%;
+  height: auto;
+  padding: 100px 0;
+  background: #1d1d1d;
+  height: auto;
+  overflow: visible; }
+  .call-to-action a {
+    margin: 0 auto;
+    display: block; }
+  @media (max-width: 960px) {
+    .call-to-action {
+      padding: 50px 0; }
+      .call-to-action .link-messenger {
+        font-size: 1.3em; } }
+  @media (max-width: 350px) {
+    .call-to-action .link-messenger {
+      font-size: 1.2em;
+      padding: 22px 35px; }
+    .call-to-action .link-messenger:after {
+      width: 25px;
+      height: 25px; } }
 
 .information {
   width: 100%;
@@ -1346,8 +1404,7 @@ a {
   .information h1 {
     color: #44BFEF;
     line-height: 1.2;
-    margin-bottom: 30px;
-    font-weight: 600; }
+    margin-bottom: 30px; }
   .information p {
     color: #fff;
     opacity: 0.8; }
@@ -1417,7 +1474,6 @@ a {
   .how-to-play h1 {
     color: #2A2A2A;
     line-height: 1.2;
-    font-weight: 600;
     margin-bottom: 30px; }
   .how-to-play p {
     color: #2A2A2A;
@@ -1453,8 +1509,8 @@ a {
     max-width: 140px; }
   .contact h1 {
     color: #2A2A2A;
-    line-height: 1.2;
     font-weight: 600;
+    line-height: 1.2;
     margin-bottom: 30px; }
   .contact p {
     color: #2A2A2A;

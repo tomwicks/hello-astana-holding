@@ -48,7 +48,9 @@ header {
 		a {
 			color: $colorTwo;
 			font-size: 1.1em;
-			font-family: gotham-bold;
+			font-family: gotham-bold, sans-serif;
+			transition: all 0.2s ease-in-out;
+			font-weight: 600;
 			cursor: pointer;
 			border-bottom: 2px solid $colorOne;
 		}
@@ -68,7 +70,7 @@ header {
 			@include border-radius(100%);
 			background-position: center center;
 			background-repeat: no-repeat;
-			background-size: 80px 80px;
+			background-size: 60px 50px;
 			border: 2px solid $colorTwo;
 		}
 
@@ -113,4 +115,14 @@ header {
 			float: none;
 		}
 	}
+
+	@include mq("nano", "max-width") {
+		.logo img {
+			width: 100px;
+		}
+	}
+}
+
+.en header .menu a {
+	letter-spacing: -1px;
 }
