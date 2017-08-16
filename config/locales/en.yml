@@ -16,7 +16,7 @@ en:
   pick_an_object_text: "Look out for a sign with a clearly displayed street and number"
 
   say_hello: "Open Messenger"
-  say_hello_text: "Open messenger and search for “Salemastana2017"
+  say_hello_text: "Open messenger and search for “Salemastana2017”"
 
   keep_talking: "Say Hello"
   keep_talking_text: "Send a greeting in this format and wait for a reply: “Hello + streetname + #number” (e.g. Hello Respublika #3)"
