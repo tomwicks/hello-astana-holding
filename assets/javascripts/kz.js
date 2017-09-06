@@ -61,17 +61,3 @@ $( ".js-learn-more" ).on( "click", function() {
 	}, 600);
 	return false;
 });
-
-// $(".depot-video").vimeo("play").vimeo("pause");
-
-// $(".js-video-play").click(function() {
-// 	$(".hero").addClass('video-active');
-// 	$("header").addClass('video-active');
-// 	$('.depot-video').vimeo("play");
-// });
-
-// $(".js-video-pause").click(function() {
-// 	$(".hero").removeClass('video-active');
-// 	$("header").removeClass('video-active');
-// 	$('.depot-video').vimeo("pause");
-// });

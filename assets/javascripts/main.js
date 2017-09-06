@@ -21,7 +21,7 @@ jQuery.fn.extend({
     }
 });
 
-// Lazy Load The Image 
+// Lazy Load The Image
 
 $(document).on('click', '.menu a', function(event){
     event.preventDefault();
@@ -31,7 +31,7 @@ $(document).on('click', '.menu a', function(event){
     }, 500);
 });
 
-// Lazy Load The Image 
+// Lazy Load The Image
 $("img.lazy").lazyload({
 	threshold : 500,
 	effect : "fadeIn"
@@ -61,17 +61,3 @@ $( ".js-learn-more" ).on( "click", function() {
 	}, 600);
 	return false;
 });
-
-// $(".depot-video").vimeo("play").vimeo("pause");
-
-// $(".js-video-play").click(function() {
-// 	$(".hero").addClass('video-active');
-// 	$("header").addClass('video-active');
-// 	$('.depot-video').vimeo("play");
-// });
-
-// $(".js-video-pause").click(function() {
-// 	$(".hero").removeClass('video-active');
-// 	$("header").removeClass('video-active');
-// 	$('.depot-video').vimeo("pause");
-// });
