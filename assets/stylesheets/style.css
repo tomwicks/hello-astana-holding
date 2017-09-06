@@ -893,10 +893,10 @@ a {
     display: block;
     margin: auto; }
   .hero h1 {
-    font-size: 1.5em;
+    font-size: 1.4em;
     text-align: center;
     font-weight: 600;
-    line-height: 1.25;
+    line-height: 1.2;
     margin-bottom: 50px;
     color: #2A2A2A; }
   .hero .link-btn-one {
